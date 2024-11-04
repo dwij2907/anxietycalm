@@ -1,21 +1,29 @@
 document.addEventListener('DOMContentLoaded', function() {
     const audio = document.getElementById('background-music');
+    const playButton = document.querySelector('.next-button'); // Assuming the user will click this to start
 
-    // Function to play music
     function playMusic() {
         const savedTime = parseFloat(localStorage.getItem('musicTime')) || 0;
         audio.currentTime = savedTime;
-        audio.play();
 
-        // Loop handling
-        audio.addEventListener('ended', function() {
-            audio.currentTime = 0;
-            audio.play();
-        });
+        const playPromise = audio.play();
+
+        if (playPromise !== undefined) {
+            playPromise.then(_ => {
+                // Automatic playback started
+                console.log('Playback started');
+            }).catch(error => {
+                // Auto-play was prevented
+                console.log('Playback prevented');
+                // Here, you can show some UI to the user to manually start playback
+            });
+        }
     }
 
-    // Play music when the page loads
-    playMusic();
+    // Binding playMusic to a user-initiated event
+    playButton.addEventListener('click', function() {
+        playMusic();
+    });
 
     // Save the current time before leaving the page
     window.addEventListener('beforeunload', function() {

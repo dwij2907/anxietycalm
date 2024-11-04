@@ -71,15 +71,9 @@ function checkAllFilled() {
     const inputs = document.querySelectorAll(".response-input");
     const allFilled = Array.from(inputs).every(input => input.value.trim() !== "");
 
-    if (allFilled) {
-        // Disable the next button to prevent double progression
-        document.getElementById("nextButton").disabled = true;
-        proceedToNextStep();
-    } else {
-        // Enable the next button if not all fields are filled
-        document.getElementById("nextButton").disabled = false;
-    }
+    document.getElementById("nextButton").disabled = !allFilled;
 }
+
 
 // Function to handle the Next button click
 function handleNextStep() {

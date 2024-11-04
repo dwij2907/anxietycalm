@@ -5,6 +5,33 @@ let checkInDiv = document.getElementById('check-in');
 let breathCount = 0;
 let maxBreaths = 4; // Number of breathing cycles
 
+document.addEventListener('DOMContentLoaded', function() {
+    const audio = document.getElementById('background-music');
+    const savedTime = parseFloat(localStorage.getItem('musicTime')) || 0;
+    audio.currentTime = savedTime;
+
+    // Attempt to play the music
+    const playPromise = audio.play();
+
+    if (playPromise !== undefined) {
+        playPromise
+            .then(() => {
+                // Music started playing
+                console.log('Audio is playing');
+            })
+            .catch((error) => {
+                // Playback was prevented
+                console.log('Playback was prevented due to autoplay policy');
+                // Optionally, provide a play button or prompt
+            });
+    }
+
+    // Save the current time before leaving the page
+    window.addEventListener('beforeunload', function() {
+        localStorage.setItem('musicTime', audio.currentTime);
+    });
+});
+
 function startBreathing() {
     startButton.style.display = 'none';
     instructions.textContent = 'Breathe In...';

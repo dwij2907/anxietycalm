@@ -1,0 +1,105 @@
+/* Reset and container styling */
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f0f8ff;
+    color: #2f4f4f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: floatIn 1.5s ease-out;
+}
+
+@keyframes floatIn {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Heading and paragraph styling */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    color: #5f9ea0;
+    animation: pulse 3s ease infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #4b4b4b;
+    opacity: 0;
+    animation: textFadeIn 3s ease forwards;
+}
+
+@keyframes textFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Button styling */
+.next-button {
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #5f9ea0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    animation: buttonFadeIn 3.5s ease forwards;
+    opacity: 0;
+}
+
+@keyframes buttonFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.next-button:hover {
+    background-color: #3b7c7c;
+    transform: scale(1.05);
+}
+
+/* Background animation for a calming effect */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle, rgba(143, 217, 234, 0.3), rgba(224, 255, 255, 0));
+    animation: gradientAnimation 6s ease-in-out infinite;
+    z-index: -1;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

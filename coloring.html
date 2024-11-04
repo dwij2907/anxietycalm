@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calm and Connect - Coloring Activity</title>
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="coloring.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Relaxing Coloring Activity</h1>
+        <p>Select a color and start coloring the canvas below.</p>
+        <div id="color-picker">
+            <!-- Color options will be dynamically added here -->
+        </div>
+        <div id="canvas-container">
+            <canvas id="drawing-canvas"></canvas>
+        </div>
+        <!-- Added the 'Done' button -->
+        <button id="done-button">Done</button>
+        <div id="check-in" class="hidden">
+            <p>Are you feeling better?</p>
+            <button onclick="handleResponse('yes')">Yes</button>
+            <button onclick="handleResponse('no')">No</button>
+        </div>
+    </div>
+    <!-- Link to the JavaScript file -->
+    <script src="coloring.js"></script>
+</body>
+</html>

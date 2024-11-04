@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calm and Connect - Jigsaw Puzzle</title>
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="puzzle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Relaxing Puzzle Game</h1>
+        <p>Assemble the puzzle to reveal the image. Take your time and focus on each piece.</p>
+        <div id="puzzle-container"></div>
+        <div id="completion-message" class="hidden">
+            <p>Are you feeling better?</p>
+            <button onclick="handleResponse('yes')">Yes</button>
+            <button onclick="handleResponse('no')">No</button>
+        </div>
+    </div>
+    <!-- Link to the JavaScript file -->
+    <script src="puzzle.js"></script>
+</body>
+</html>

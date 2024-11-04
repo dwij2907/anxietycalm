@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calm and Connect - Visualization</title>
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="visualization.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Relaxing Visualization</h1>
+        <p>Take a moment to watch this calming video.</p>
+        <div id="video-container">
+            <video id="calming-video" width="800" controls>
+                <source src="A_Day_of_Joy_in_Banff.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div id="check-in" class="hidden">
+            <p>Are you feeling better?</p>
+            <button onclick="handleResponse('yes')">Yes</button>
+            <button onclick="handleResponse('no')">No</button>
+        </div>
+    </div>
+    <!-- Link to the JavaScript file -->
+    <script src="visualization.js"></script>
+</body>
+</html>

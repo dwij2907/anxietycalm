@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f0f8ff;
+    color: #2f4f4f;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    max-width: 900px; /* Increased from 800px to 900px */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #5f9ea0;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Color Picker Styles */
+#color-picker {
+    margin-bottom: 20px;
+}
+
+.color-option {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+
+/* Canvas Styles */
+#canvas-container {
+    position: relative;
+    margin: 0 auto 20px auto;
+    border: 2px solid #5f9ea0;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+#drawing-canvas {
+    background-color: #ffffff; /* Set canvas background to white */
+    cursor: crosshair;
+    width: 100%;
+    max-width: 800px; /* Increased max width from 600px to 800px */
+    height: auto;
+    display: block;
+}
+
+/* Button Styles */
+#done-button {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #5f9ea0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#done-button:hover {
+    background-color: #3b7c7c;
+}
+
+/* Check-In Message */
+#check-in {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #5f9ea0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3b7c7c;
+}
+
+.hidden {
+    display: none;
+}

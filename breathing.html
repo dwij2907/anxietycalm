@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Deep Breathing Exercise</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="breathing.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Deep Breathing Exercise</h1>
+        <p id="instruction">Click "Start" to begin the exercise.</p>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <button id="startButton" onclick="startBreathing()">Start</button>
+        <div id="check-in" class="hidden">
+            <p>Are you feeling better?</p>
+            <button onclick="handleCheckIn('yes')">Yes</button>
+            <button onclick="handleCheckIn('no')">No</button>
+        </div>
+    </div>
+
+    <script src="breathing.js"></script>
+</body>
+</html>

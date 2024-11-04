@@ -1,0 +1,65 @@
+/* General Styles */
+body, html {
+    height: 100%;  /* Make sure the html and body cover full height of the viewport */
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center content vertically */
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 90%; /* Adjust width to be 90% of the viewport */
+    max-width: 600px; /* Maximum width */
+    box-sizing: border-box; /* Include padding and border in the width */
+}
+
+h1 {
+    color: #333;
+    margin: 10px 0;
+}
+
+p {
+    color: #666;
+    margin: 10px 0 20px; /* Provide some spacing */
+}
+
+img {
+    max-width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Optional: for rounded corners */
+}
+
+/* Response Panel */
+#response-panel {
+    margin-top: 20px; /* Space above the response panel */
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #5f9ea0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3b7c7c;
+}
+
+@media (max-height: 500px) {
+    .container {
+        margin-top: 0; /* Reduce margin for very small height screens */
+    }
+}

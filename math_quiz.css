@@ -1,0 +1,80 @@
+/* General Styles */
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f0f8ff;
+    color: #2f4f4f;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #5f9ea0;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Quiz Styles */
+#quiz-container {
+    margin-bottom: 20px;
+}
+
+.question {
+    margin: 15px 0;
+    font-size: 2em; /* Increased font size for better visibility */
+    text-align: center; /* Centered the question */
+}
+
+#answer-input {
+    font-size: 1.5em; /* Increased input font size */
+    width: 100px; /* Adjusted width for better visibility */
+    text-align: center; /* Centered text inside the input */
+    margin-top: 10px;
+}
+
+.feedback {
+    margin-top: 10px;
+    color: green;
+    font-size: 1.2em;
+}
+
+.error {
+    color: red;
+    font-size: 1.2em;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Completion Message */
+#check-in {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #5f9ea0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3b7c7c;
+}

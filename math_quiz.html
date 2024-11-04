@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calm and Connect - Math Quiz</title>
+    <!-- Link to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="math_quiz.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Relaxing Math Quiz</h1>
+        <p>Answer the following simple math questions.</p>
+        <div id="quiz-container">
+            <!-- Current question will be displayed here -->
+        </div>
+        <div id="check-in" class="hidden">
+            <p>Are you feeling better?</p>
+            <button onclick="handleResponse('yes')">Yes</button>
+            <button onclick="handleResponse('no')">No</button>
+        </div>
+    </div>
+    <!-- Link to the JavaScript file -->
+    <script src="math_quiz.js"></script>
+</body>
+</html>

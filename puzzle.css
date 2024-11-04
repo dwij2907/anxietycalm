@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f0f8ff;
+    color: #2f4f4f;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #5f9ea0;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Puzzle Container */
+#puzzle-container {
+    width: 400px;    /* Reduced from 600px to 400px */
+    height: 400px;   /* Reduced from 600px to 400px */
+    position: relative;
+    margin: 0 auto 20px auto;
+    border: 2px solid #5f9ea0;
+    background-color: #e6f7ff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+/* Puzzle Slots */
+.puzzle-slot {
+    border: 1px dashed #a0c4c7;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Puzzle Pieces */
+.puzzle-piece {
+    position: absolute;
+    border: 1px solid #ddd;
+    cursor: grab;
+    background-size: 400px 400px;  /* Adjusted to match new container size */
+    width: 133.33px;  /* 400px / 3 columns */
+    height: 133.33px; /* 400px / 3 rows */
+}
+
+.puzzle-piece:active {
+    cursor: grabbing;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Completion Message */
+#completion-message {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #5f9ea0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3b7c7c;
+}
